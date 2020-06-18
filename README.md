@@ -23,8 +23,11 @@ Preparation of raw data
 • In these data folders GPS data should be stored in csv files.
 
 • Filenames must consist of
+  
   – the date,
+  
   – the animal identification and
+  
   – a one digit marker (’a’, ’b’), denoting one of two exchange sensors. Date and animal identification need to be separated by an     underscore, whilst the marker is attached directly to the animal identification, e.g. ’180601_10a.csv’.
 
 
@@ -35,24 +38,35 @@ Open the configuration file ’Config.R’ and set the following variables to su
 • Set the path to the directory which contains the data folders (see Preparation of raw data).
 
 • Configure variables concerning the used GPS sensor:
+  
   – The header of the data files extracted from the GPS sensor.
+  
   – Formats in which date and time are given
 
 • Configure variables concerning the area of observation.
+  
   – Specify GPS coordinates of corner points of the minimal rectangle including the area of observation.
+  
   – Enter the name of the file containing GPS data of the boundary of the area of observation.
+  
   – GPS coordinates of inner points need to be given as a list.
 
 • Configure additional variables concerning the prefiltering.
+  
   – Set upper bounds for the covered distance between two consecutive GPS measurements for the
     boundary (max_dist_boundary) and the GPS data recorded from the animals (max_dist).
+  
   – Define maximal speed for GPS data of the boundary (max_speed_boundary) and GPS data recorded
     from the animals (max_speed).
 
 • Configure variables concerning the grid used for filtering.
+  
   – Specify GPS coordinates of a grid origin located south and west of the area of observation.
+  
   – Define a side length in meters.
+  
   – Set a total width in meters large enough that the grid covers the area of observation completely.
+  
   – Specify GPS coordinates of two reference points and the distance between them, to enable a trans-
       formation between latitude/longitude degrees and meters.
 
